@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header/Header';
 import GeneralStats from './Stats/GeneralStats';
 import GeneralSkills from './Skills/GeneralSkills';
+import PlayerAccountModal from './playerAccount/PlayerAccountModal';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
             </div>
         </div>
+        <PlayerAccountModal/>
     </div>
   );
 }
