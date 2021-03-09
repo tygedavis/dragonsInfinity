@@ -1,0 +1,33 @@
+.health-points-container{
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.health-points-circle{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    -moz-border-radius: 76px;
+    -webkit-border-radius: 76px;
+    border-radius: 76px;
+}
+
+.current-health-points-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px auto 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+}
+
+.total-health-points-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 8px auto 0;
+}
+
+.health-points-indicator{
+    font-weight: bold;
+}

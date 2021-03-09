@@ -1,0 +1,9 @@
+.general-skills-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 400px;
+    max-width: 223px;
+    padding-left: 45px;
+}

@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+    margin: auto;
+}
+
+.header h1{
+    font-size: 14px;
+}
+
+.character-name {
+    font-weight: normal;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px;
+    width: 17%;
+    max-width: 225px;
+}
+
+@media (max-width: 1400px) {
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        width: 125px;
+    }
+}
