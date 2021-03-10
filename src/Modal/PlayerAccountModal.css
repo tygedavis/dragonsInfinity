@@ -1,12 +1,11 @@
 .playerAccountModalContainer {
     position: relative;
     left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    bottom: 450px;
+    transform: translateX(-50%);
     background-color: white;
-    width: 30%;
     max-height: 100%;
-    max-width: 475px;
+    max-width: 400px;
     min-width: 400px;
     height: 550px;
     border: 1px solid black;
