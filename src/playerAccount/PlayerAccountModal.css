@@ -1,0 +1,20 @@
+.playerAccountModalContainer {
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    width: 30%;
+    max-width: 475px;
+    min-width: 400px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+.showing {
+    display: block;
+}
+
+.hiding {
+    display: none;
+}

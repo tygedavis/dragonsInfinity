@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import Button from '../Button/Button';
 import store from '../redux/store';
 import _ from 'lodash';
@@ -6,8 +5,8 @@ import './Header.css';
 
 export default function Header() {
     function togglePlayerAccountModal(){
-        const initialState = store.getState();
-        store.dispatch({ type: 'playerAccount/toggleOpen', payload: !_.get(initialState, 'toggles.playerAccountModalOpen') });
+        const state = store.getState();
+        store.dispatch({ type: 'playerAccount/toggleOpen', payload: !_.get(state, 'toggles.playerAccountModalOpen') });
     }
 
     return(
