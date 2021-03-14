@@ -1,23 +1,40 @@
 import GeneralSkill from './GeneralSkill';
 import './GeneralSkills.css';
+import SecondarySkill from './SecondarySkill';
+import _ from 'lodash';
+import { connect } from 'react-redux';
 
-const generalSkillValues = [
-    'Strength',
-    'Dexterity',
-    'Constitution',
-    'Wisdom',
-    'Intelligence',
-    'Charisma'
-]
-
-export default function GeneralSkills() {
+function GeneralSkills(props) {
     return(
         <div className='general-skills-container'>
-            {generalSkillValues.map((skill) => {
-                return <GeneralSkill
-                    text={skill}
-                />
-            })}
+            <div className='main-skills-container'>
+                {props.generalSkills.map((skill) => {
+                    console.log('------->skill', skill);
+                    return <GeneralSkill
+                        id={skill.id}
+                        name={skill.name}
+                        level={skill.level}
+                        modifier={skill.modifier}
+                    />
+                })}
+            </div>
+            <div className='secondary-skills-container'>
+                {props.secondarySkills.map((skill) => {
+                    return <SecondarySkill
+                        name={skill.name}
+                        genSkill={skill.genSkill}
+                    />
+                })}
+            </div>
         </div>
     )
 }
+
+function mapStateToProps(state) {
+    return {
+        generalSkills: _.get(state, 'stats.generalSkills'),
+        secondarySkills: _.get(state, 'stats.secondarySkills')
+    };
+}
+
+export default connect(mapStateToProps)(GeneralSkills);

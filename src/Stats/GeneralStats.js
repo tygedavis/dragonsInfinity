@@ -1,26 +1,29 @@
 import HealthPoints from './HealthPoints';
 import Stat from './Stat';
-
+import _ from 'lodash';
 import './GeneralStats.css';
+import { connect } from 'react-redux';
 
-const statArray = [
-    'Initiative',
-    'Speed',
-    'Proficiency',
-    'Armor Class'
-]
-
-export default function GeneralStats(){
+function GeneralStats(props){
     return(
         <div className='general-stats-container'>
             <HealthPoints/>
-            {statArray.map((statValue) => {
+            {props.stats.map((statValue) => {
                 return(
                     <Stat
-                        text={statValue}
+                        text={statValue.name}
+                        total={statValue.total}
                     />
                 )
             })}
         </div>
     )
 }
+
+function mapStateToProps(state) {
+    return {
+        stats: _.get(state, 'stats.stats')
+    };
+}
+
+export default connect(mapStateToProps)(GeneralStats);

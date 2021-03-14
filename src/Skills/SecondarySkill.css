@@ -1,0 +1,10 @@
+.secondary-skill-container {
+    width: 50%;
+}
+
+.secondary-skill-container p {
+    font-size: 12px;
+}
+.secondary-skill-container p:hover {
+    cursor: pointer;
+}
