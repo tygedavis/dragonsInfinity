@@ -1,10 +1,11 @@
 import './App.css';
+import { connect } from 'react-redux';
 import Header from './Header/Header';
 import GeneralStats from './Stats/GeneralStats';
 import GeneralSkills from './Skills/GeneralSkills';
 import PlayerAccountModal from './Modal/PlayerAccountModal';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
         <div className='app-header'>
@@ -24,4 +25,10 @@ function App() {
   );
 }
 
-export default App;
+function mapStateToProps(state) {
+    return {
+        toggles: state.toggles
+    };
+}
+
+export default connect(mapStateToProps)(App);

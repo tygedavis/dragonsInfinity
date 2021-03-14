@@ -1,9 +1,27 @@
-.general-skills-container{
+.general-skills-container {
+    width: 100%;
+    max-width: 808px;
+    min-width: 808px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-skills-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     max-height: 400px;
     max-width: 223px;
-    padding-left: 45px;
+}
+
+.secondary-skills-container {
+    border: 1px solid black;
+    width: 600px;
+    margin-top: 45px;
+    max-height: 354px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
