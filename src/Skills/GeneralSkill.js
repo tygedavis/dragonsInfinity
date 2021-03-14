@@ -8,7 +8,7 @@ export default function GeneralSkill(props){
             </div>
 
             <span className='skill-total'>{props.level}</span>
-            <span className='skill-name'>{props.text}</span>
+            <span className='skill-name'>{props.name}</span>
         </div>
     )
 }
