@@ -1,8 +1,8 @@
 import './HealthPoints.css';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 function HealthPoints(props){
-    console.log('------->props', props);
     return(
         <div className='health-points-container'>
             <div className='health-points-circle'>
@@ -21,7 +21,7 @@ function HealthPoints(props){
 
 function mapStateToProps(state) {
     return {
-        stats: state.stats
+        stats: _.get(state, 'stats.healthPoints')
     };
 }
 
