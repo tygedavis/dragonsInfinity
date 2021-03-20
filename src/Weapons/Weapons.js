@@ -8,8 +8,7 @@ function Weapons(props) {
     return (
         <div className='weapons-container'>
             <div className='weapons-header'>
-                <p>Weapons</p>
-                {/*Todo: add a plus icon*/}
+                <p> Weapons </p>
             </div>
             <div className='weapons-body'>
                 {props.weapons.map((weapon) => {

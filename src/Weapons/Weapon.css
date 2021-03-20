@@ -1,5 +1,29 @@
 .weapon-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.weapon-name {
+    width: 33.3%;
+    text-align: left;
+}
+
+.weapon-dice {
+    width: 33.3%;
+    text-align: center;
+}
+
+.weapon-roll-container {
+    width: 33.3%;
+    text-align: right;
+}
+
+.weapon-roll-btn {
+    margin: 5px;
+    padding: 5%;
+    font-size: 1em;
 }
