@@ -1,0 +1,20 @@
+.add-weapon-modal {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    background-color: white;
+    max-height: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+.is-hiding {
+    display: none;
+}
+
+.add-weapon-modal button {
+    text-align: right;
+}
