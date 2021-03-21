@@ -1,4 +1,6 @@
 .weapons-container {
     margin-top: 10px;
     border: 1px solid black;
+    max-width: 808px;
+    min-width: 732px;
 }
