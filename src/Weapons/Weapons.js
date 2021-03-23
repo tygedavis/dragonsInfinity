@@ -2,7 +2,7 @@ import Weapon from './Weapon';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import { HiOutlinePlusCircle } from 'react-icons/hi';
-import AddWeaponModal from './AddWeaponModal';
+import AddWeaponModal from '../Modal/AddWeaponModal';
 import './Weapons.css';
 import { IconContext } from 'react-icons';
 import store from '../redux/store';
