@@ -17,12 +17,6 @@ export default function toggleReducer(state = initialState, action) {
                 addWeaponModalOpen: action.payload
             }
         }
-        case 'weapons/closeModal': {
-            return {
-                ...state,
-                addWeaponModalOpen: action.payload
-            }
-        }
         default:
             return state
     }
