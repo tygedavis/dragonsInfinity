@@ -5,6 +5,7 @@ import GeneralStats from './Stats/GeneralStats';
 import GeneralSkills from './Skills/GeneralSkills';
 import PlayerAccountModal from './Modal/PlayerAccountModal';
 import Weapon from './Weapons/Weapons';
+import Spellbook from './Spells/Spellbook';
 
 function App(props) {
   return (
@@ -19,7 +20,7 @@ function App(props) {
                 <Weapon/>
             </div>
             <div className='body-container-2'>
-
+                <Spellbook/>
             </div>
         </div>
         <PlayerAccountModal/>
