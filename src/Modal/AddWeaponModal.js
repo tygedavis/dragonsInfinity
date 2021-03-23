@@ -10,7 +10,7 @@ function AddWeaponModal(props) {
         name: '',
         typeOfDice: '',
         numberOfDice: '',
-        addProficiencyBonus: '',
+        addProficiencyBonus: false,
         generalBonus: ''
     }
 
@@ -29,14 +29,17 @@ function AddWeaponModal(props) {
     }, [props.addWeaponModalOpen])
 
     function onInputChange(e) {
-        if (e.target.name === 'proficient') {
-            e.target.value = true;
+        if (e.target.name !== 'addProficiencyBonus') {
+            setWeapon({
+                ...weapon,
+                [e.target.name]: e.target.value
+            });
+        } else if (e.target.name === 'addProficiencyBonus') {
+            setWeapon({
+                ...weapon,
+                [e.target.name]: !weapon.addProficiencyBonus
+            });
         }
-
-        setWeapon({
-            ...weapon,
-            [e.target.name]: e.target.value
-        });
     }
 
     function handleSubmit() {
@@ -86,12 +89,13 @@ function AddWeaponModal(props) {
                     />
                 </div>
                 <div className='input-container'>
-                    <label htmlFor="Proficient">Add Proficiency Bonus? </label>
+                    <label htmlFor="addProficiencyBonus">Add Proficiency Bonus? </label>
                     <input
                         value={weapon.addProficiencyBonus}
-                        name='proficient'
+                        name='addProficiencyBonus'
                         type='checkbox'
                         onChange={onInputChange}
+                        checked={weapon.addProficiencyBonus}
                     />
                 </div>
                 <div className='input-container'>
