@@ -18,24 +18,24 @@ const initialState = { //Eventually these numbers will be loaded in from a datab
         { id: 6, name: 'Charisma', level: 8, modifier: 1 }
     ],
     secondarySkills: [
-        { name: 'Acrobatics', genSkill: 'dex', profficient: false },
-        { name: 'Animal Handling', genSkill: 'wis', profficient: false },
-        { name: 'Arcana', genSkill: 'int', profficient: false },
-        { name: 'Athletics', genSkill: 'str', profficient: false },
-        { name: 'Deception', genSkill: 'cha', profficient: false },
-        { name: 'History', genSkill: 'int', profficient: false },
-        { name: 'Insight', genSkill: 'wis', profficient: false },
-        { name: 'Intimidation', genSkill: 'cha', profficient: false },
-        { name: 'Investigation', genSkill: 'int', profficient: false },
-        { name: 'Medicine', genSkill: 'wis', profficient: false },
-        { name: 'Nature', genSkill: 'int', profficient: false },
-        { name: 'Perception', genSkill: 'wis', profficient: false },
-        { name: 'Performance', genSkill: 'cha', profficient: false },
-        { name: 'Persuasion', genSkill: 'cha', profficient: false },
-        { name: 'Religion', genSkill: 'int', profficient: false },
-        { name: 'Slight of Hand', genSkill: 'dex', profficient: false },
-        { name: 'Stealth', genSkill: 'dex', profficient: false },
-        { name: 'Survival', genSkill: 'wis', profficient: false }
+        { name: 'Acrobatics', genSkill: 'dex', proficient: false },
+        { name: 'Animal Handling', genSkill: 'wis', proficient: false },
+        { name: 'Arcana', genSkill: 'int', proficient: false },
+        { name: 'Athletics', genSkill: 'str', proficient: true },
+        { name: 'Deception', genSkill: 'cha', proficient: false },
+        { name: 'History', genSkill: 'int', proficient: false },
+        { name: 'Insight', genSkill: 'wis', proficient: false },
+        { name: 'Intimidation', genSkill: 'cha', proficient: false },
+        { name: 'Investigation', genSkill: 'int', proficient: false },
+        { name: 'Medicine', genSkill: 'wis', proficient: false },
+        { name: 'Nature', genSkill: 'int', proficient: false },
+        { name: 'Perception', genSkill: 'wis', proficient: false },
+        { name: 'Performance', genSkill: 'cha', proficient: false },
+        { name: 'Persuasion', genSkill: 'cha', proficient: false },
+        { name: 'Religion', genSkill: 'int', proficient: false },
+        { name: 'Slight of Hand', genSkill: 'dex', proficient: true },
+        { name: 'Stealth', genSkill: 'dex', proficient: true },
+        { name: 'Survival', genSkill: 'wis', proficient: false }
     ]
 }
 

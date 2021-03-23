@@ -1,5 +1,6 @@
 const initialState = {
-    playerAccountModalOpen: false
+    playerAccountModalOpen: false,
+    addWeaponModalOpen: false
 }
 
 export default function toggleReducer(state = initialState, action) {
@@ -8,6 +9,12 @@ export default function toggleReducer(state = initialState, action) {
             return {
                 ...state,
                 playerAccountModalOpen: action.payload
+            }
+        }
+        case 'weapons/toggleOpen': {
+            return {
+                ...state,
+                addWeaponModalOpen: action.payload
             }
         }
         default:

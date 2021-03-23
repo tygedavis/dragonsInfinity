@@ -6,7 +6,8 @@
     border: 1px solid black;
     min-height: 120px;
     min-width: 100px;
-    margin-left: 70px;
+    max-width: 100%;
+    margin-left: 51px;
     border-radius: 10px;
 }
 

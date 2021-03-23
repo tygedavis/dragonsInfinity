@@ -1,7 +1,7 @@
 .general-skills-container {
     width: 100%;
     max-width: 808px;
-    min-width: 808px;
+    min-width: 732px;
     display: flex;
     justify-content: space-between;
 }
@@ -17,7 +17,7 @@
 
 .secondary-skills-container {
     border: 1px solid black;
-    width: 600px;
+    width: 530px;
     margin-top: 45px;
     max-height: 354px;
     display: flex;

@@ -1,0 +1,26 @@
+.weapons-container {
+    margin-top: 10px;
+    border: 1px solid black;
+    max-width: 808px;
+    min-width: 732px;
+}
+
+.weapons-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.weapons-header p {
+    width: 50%;
+    text-align: center;
+    padding-left: 20px;
+}
+.weapons-header .plus-icon {
+    text-align: right;
+    width: 1.5em;
+    height: 1.5em;
+}
+.weapons-header .plus-icon:hover {
+    cursor: pointer;
+}

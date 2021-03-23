@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import GeneralStats from './Stats/GeneralStats';
 import GeneralSkills from './Skills/GeneralSkills';
 import PlayerAccountModal from './Modal/PlayerAccountModal';
+import Weapon from './Weapons/Weapons';
 
 function App(props) {
   return (
@@ -15,6 +16,7 @@ function App(props) {
             <div className='body-container-1'>
                 <GeneralStats/>
                 <GeneralSkills/>
+                <Weapon/>
             </div>
             <div className='body-container-2'>
 

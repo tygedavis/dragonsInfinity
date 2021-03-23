@@ -9,7 +9,6 @@ function GeneralSkills(props) {
         <div className='general-skills-container'>
             <div className='main-skills-container'>
                 {props.generalSkills.map((skill) => {
-                    console.log('------->skill', skill);
                     return <GeneralSkill
                         id={skill.id}
                         name={skill.name}
@@ -23,6 +22,7 @@ function GeneralSkills(props) {
                     return <SecondarySkill
                         name={skill.name}
                         genSkill={skill.genSkill}
+                        proficient={skill.proficient}
                     />
                 })}
             </div>

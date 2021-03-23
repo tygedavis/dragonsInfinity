@@ -1,0 +1,41 @@
+.add-weapon-modal {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+    background-color: white;
+    max-height: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    border: 1px solid black;
+    padding: 40px;
+}
+.add-weapon-modal p {
+    margin-bottom: 30px;
+}
+
+.is-hiding {
+    display: none;
+}
+
+.exit-button-container {
+    text-align: right;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.input-container label {
+    display: inline-block;
+}
