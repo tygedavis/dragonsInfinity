@@ -10,7 +10,7 @@ function AddWeaponModal(props) {
         name: '',
         typeOfDice: '',
         numberOfDice: '',
-        addProficiencyBonus: false,
+        addProficiencyBonus: false, 
         generalBonus: ''
     }
 
@@ -45,6 +45,7 @@ function AddWeaponModal(props) {
     function handleSubmit() {
         //Todo: validate inputs
         store.dispatch({ type: 'weapons/addWeapon', payload: weapon });
+        console.log(weapon);
         props.toggleWeaponModal();
     }
 
@@ -59,7 +60,7 @@ function AddWeaponModal(props) {
 
             <div className='inputs-container'>
                 <div className='input-container'>
-                    <label htmlFor="Name">Weapon Name: </label>
+                    <label htmlFor="name">Weapon Name: </label>
                     <input
                         placeholder='Weapon Name'
                         value={weapon.name}
@@ -100,7 +101,7 @@ function AddWeaponModal(props) {
                 </div>
                 <div className='input-container'>
                     <label htmlFor="generalBonus">Added Bonuses: </label>
-                    <select name='generalBonus' onChange={onInputChange}>
+                    <select value={weapon.generalBonus} name='generalBonus' onChange={onInputChange}>
                         <option value='' selected disabled hidden>Choose here</option>
                         <option value='str'>Strength</option>
                         <option value='dex'>Dexterity</option>
