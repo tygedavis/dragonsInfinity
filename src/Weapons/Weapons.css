@@ -11,16 +11,28 @@
     align-items: center;
     justify-content: center;
 }
-.weapons-header p {
-    width: 50%;
-    text-align: center;
-    padding-left: 20px;
+
+.weapons-header-spacing {
+    width: 33.3%;
 }
+
+.weapons-header p {
+    width: 33.3%;
+    text-align: center;
+}
+
+.weapon-plus-container {
+    width: 33.3%;
+    text-align: right;
+}
+
 .weapons-header .plus-icon {
     text-align: right;
     width: 1.5em;
     height: 1.5em;
+    margin-right: 20%; 
 }
+
 .weapons-header .plus-icon:hover {
     cursor: pointer;
 }

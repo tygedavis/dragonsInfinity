@@ -19,10 +19,9 @@ function Weapons(props) {
                 toggleWeaponModal={toggleWeaponModal}
             />
             <div className='weapons-header'>
+                <div className="weapons-header-spacing"></div>
                 <p> Weapons </p>
-                <div
-                    onClick={ toggleWeaponModal }
-                >
+                <div className="weapon-plus-container" onClick={ toggleWeaponModal }>
                     <IconContext.Provider value={{ className: 'plus-icon' }}>
                         <HiOutlinePlusCircle/>
                     </IconContext.Provider>

@@ -1,0 +1,31 @@
+.spellbook-container {
+    margin: 10px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.spellbook-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.spell-header-spacing {
+    width: 33.3%;
+}
+
+.spellbook-header p {
+    width: 33.3%;
+}
+
+.spell-plus-container {
+    width: 33.3%;
+}
+
+.spell-plus-icon {
+    text-align: right;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 20%; 
+}
