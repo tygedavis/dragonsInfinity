@@ -11,6 +11,7 @@ function GeneralStats(props){
             {props.stats.map((statValue) => {
                 return(
                     <Stat
+                        addedText={statValue.addedString}
                         text={statValue.name}
                         total={statValue.total}
                     />

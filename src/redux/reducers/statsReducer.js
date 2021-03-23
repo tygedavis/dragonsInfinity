@@ -4,18 +4,18 @@ const initialState = { //Eventually these numbers will be loaded in from a datab
         totalHealthPoints: 160
     },
     stats: [
-        { name: 'Initiative', total: '+2' },
+        { name: 'Initiative', total: 2, addedString: '+' },
         { name: 'Speed', total: '40' },
-        { name: 'Proficiency', total: '+5' },
-        { name: 'Armor Class', total: '13' }
+        { name: 'Proficiency', total: 5, addedString: '+' },
+        { name: 'Armor Class', total: 13 }
     ],
     generalSkills: [
-        { id: 1, name: 'Strength', level: 10, modifier: 2 },
-        { id: 2, name: 'Dexterity', level: 10, modifier: 2 },
-        { id: 3, name: 'Constitution', level: 9, modifier: 2 },
-        { id: 4, name: 'Wisdom', level: 4, modifier: 0 },
-        { id: 5, name: 'Intelligence', level: 5, modifier: 0 },
-        { id: 6, name: 'Charisma', level: 8, modifier: 1 }
+        { id: 1, name: 'Strength', level: 10, modifier: 2, shortName: 'str' },
+        { id: 2, name: 'Dexterity', level: 10, modifier: 2, shortName: 'dex' },
+        { id: 3, name: 'Constitution', level: 9, modifier: 2, shortName: 'con' },
+        { id: 4, name: 'Wisdom', level: 4, modifier: 0, shortName: 'wis' },
+        { id: 5, name: 'Intelligence', level: 5, modifier: 0, shortName: 'int' },
+        { id: 6, name: 'Charisma', level: 8, modifier: 1, shortName: 'cha' }
     ],
     secondarySkills: [
         { name: 'Acrobatics', genSkill: 'dex', proficient: false },

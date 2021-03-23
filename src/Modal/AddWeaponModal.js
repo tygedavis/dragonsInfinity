@@ -8,9 +8,10 @@ import store from '../redux/store';
 function AddWeaponModal(props) {
     const defaultState = {
         name: '',
+        attackBonus: '',
         typeOfDice: '',
         numberOfDice: '',
-        addProficiencyBonus: false, 
+        addProficiencyBonus: false,
         generalBonus: ''
     }
 
@@ -70,12 +71,22 @@ function AddWeaponModal(props) {
                     />
                 </div>
                 <div className='input-container'>
+                    <label htmlFor="attackBonus">Attack Bonus: </label>
+                    <input
+                        placeholder='What is the attack bonus'
+                        value={weapon.typeOfDice}
+                        name='attackBonus'
+                        type='number'
+                        onChange={onInputChange}
+                    />
+                </div>
+                <div className='input-container'>
                     <label htmlFor="Type">What Dice: </label>
                     <input
                         placeholder='Number Sided Dice to Roll'
                         value={weapon.typeOfDice}
                         name='typeOfDice'
-                        type='text'
+                        type='number'
                         onChange={onInputChange}
                     />
                 </div>
