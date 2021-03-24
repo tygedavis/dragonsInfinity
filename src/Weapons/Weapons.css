@@ -3,6 +3,8 @@
     border: 1px solid black;
     max-width: 808px;
     min-width: 732px;
+    max-height: 350px;
+    overflow-y: scroll;
 }
 
 .weapons-header {
@@ -10,6 +12,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid black;
 }
 
 .weapons-header-spacing {
@@ -30,7 +36,7 @@
     text-align: right;
     width: 1.5em;
     height: 1.5em;
-    margin-right: 20%; 
+    margin-right: 20%;
 }
 
 .weapons-header .plus-icon:hover {
