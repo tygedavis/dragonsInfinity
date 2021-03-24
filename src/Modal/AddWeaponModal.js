@@ -8,7 +8,6 @@ import store from '../redux/store';
 function AddWeaponModal(props) {
     const defaultState = {
         name: '',
-        attackBonus: '',
         typeOfDice: '',
         numberOfDice: '',
         addProficiencyBonus: false,
@@ -44,10 +43,22 @@ function AddWeaponModal(props) {
     }
 
     function handleSubmit() {
-        //Todo: validate inputs
-        store.dispatch({ type: 'weapons/addWeapon', payload: weapon });
-        console.log(weapon);
-        props.toggleWeaponModal();
+        let shouldError = false;
+        _.forEach(weapon, (item) => {
+            if (_.isBoolean(item)) {
+                //Do nothing. Just filtering out the false values
+            } else if(_.isEmpty(item)) {
+                shouldError = true;
+            }
+        });
+
+        if (shouldError) {
+            alert('Please fill in every field to add a weapon');
+            shouldError = false;
+        } else {
+            store.dispatch({ type: 'weapons/addWeapon', payload: weapon });
+            props.toggleWeaponModal();
+        };
     }
 
     return (
@@ -67,16 +78,6 @@ function AddWeaponModal(props) {
                         value={weapon.name}
                         name='name'
                         type='text'
-                        onChange={onInputChange}
-                    />
-                </div>
-                <div className='input-container'>
-                    <label htmlFor="attackBonus">Attack Bonus: </label>
-                    <input
-                        placeholder='What is the attack bonus'
-                        value={weapon.typeOfDice}
-                        name='attackBonus'
-                        type='number'
                         onChange={onInputChange}
                     />
                 </div>
