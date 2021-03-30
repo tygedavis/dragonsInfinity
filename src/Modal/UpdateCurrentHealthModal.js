@@ -7,7 +7,7 @@ import store from '../redux/store';
 
 function UpdateCurrentHealthModal(props) {
     const defaultState = {
-        healthPointDiff: '',
+        healthPointDiff: 0,
         gainOrLoss: 'lost'
     }
 
