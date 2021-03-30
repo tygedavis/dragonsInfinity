@@ -41,10 +41,13 @@ const initialState = { //Eventually these numbers will be loaded in from a datab
 
 export default function statsReducer(state = initialState, action) {
     switch (action.type) {
-        case 'healthPoints/updateHealth': {
+        case 'healthPoints/updateCurrentHealth': {
             return {
                 ...state,
-                playerAccountModalOpen: action.payload
+                healthPoints: {
+                    ...state.healthPoints,
+                    currentHealthPoints: action.payload
+                }
             }
         }
         default:

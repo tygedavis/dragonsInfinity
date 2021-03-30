@@ -1,4 +1,4 @@
-.add-weapon-modal {
+.update-current-health-modal-container {
     position: absolute;
     left: 50%;
     bottom: 30%;
@@ -11,7 +11,7 @@
     padding: 40px;
     z-index: 99;
 }
-.add-weapon-modal p {
+.update-current-health-modal-container p {
     margin-bottom: 30px;
 }
 
