@@ -1,12 +1,17 @@
 # Hello, Welcome to the DnD Character Sheet
 
-## Notes
-```  
-- Currently, this project is a work in progress.   
-- The API for this web application has not yet been started   
-```
+## Notes  
+> - Currently, this project is a work in progress.   
+> - The API for this web application has not yet been started
 
 ## About
+
+**The Creators**
+
+[Tyge Davis](https://www.linkedin.com/in/tygedavis/)
+
+[Brandon Peterson](https://www.linkedin.com/in/brandon-peterson-194572198/)
+
 This is a web app designed to give the same feel as a paper character sheet from the popular role-play game Dungeons and Dragons.
 
 Most online Dungeons and Dragons character sheets try to do all the heavy lifting for you. This takes away a lot of the charm that comes with Dungeons and Dragons.
@@ -40,3 +45,11 @@ npm install && npm start
 ```
 
 This will install all the node modules and start the application. Then, happy coding!
+
+### Pull Requests
+
+Feel free to make any pull requests into the `develop` branch. Any PR that is not into the `develop` branch will be deleted. Once a PR is made to the `develop` branch it will be reviewed by an admin to be merged. 
+
+Feel free to reach out to any of the admins when you submit a PR.
+
+Branches that are merged will then be deleted.
