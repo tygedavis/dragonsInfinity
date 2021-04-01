@@ -11,6 +11,9 @@
     -webkit-border-radius: 76px;
     border-radius: 76px;
 }
+.health-points-circle:hover {
+    cursor: pointer;
+}
 
 .current-health-points-container{
     display: flex;
