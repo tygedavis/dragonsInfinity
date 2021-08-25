@@ -1,6 +1,7 @@
-# Hello, Welcome to the DnD Character Sheet
+# Hello, Welcome to Dragons Infinity
 
 ## Notes  
+> - Dungeons and Dragons is a product of [Wizards of the Coast](https://company.wizards.com/en). This project is not intended to be used for profit.
 > - Currently, this project is a work in progress.   
 > - The API for this web application has not yet been started
 
@@ -12,11 +13,17 @@
 
 [Brandon Peterson](https://www.linkedin.com/in/brandon-peterson-194572198/)
 
-This is a web app designed to give the same feel as a paper character sheet from the popular role-play game Dungeons and Dragons.
+This is a web app designed to give the same feel as a paper character sheet from the popular role-play game [Dungeons and Dragons](https://dnd.wizards.com/).
 
-Most online Dungeons and Dragons character sheets try to do all the heavy lifting for you. This takes away a lot of the charm that comes with Dungeons and Dragons.
+Most online solutions for Dungeons and Dragons character sheets try to do all the heavy lifting for you. This approach takes away a lot of the charm that comes with Dungeons and Dragons.
 
-This character sheet is specifically make to let you customize it however you (within your DM's permission, of course) would like.
+Dragons Infinity is a practical solution for bringing your character online. It was built for players, by players.
+
+The problem that we encountered frequently during our sessions of DnD was that while we loved the convenience of having an online character, the solutions that were available to players simply didn't allow the freedom, flexibility, or creativity that often results in unique situations developed by individual parties.
+
+The solution that we came up with to this problem was to build a online software that near perfectly resembled using a sheet of paper. This would take away a lot of the convenience that these other solutions had but would encourage players to instead rely on the books.
+
+
 
 ### Math isn't Fun
 
@@ -32,11 +39,11 @@ Don't worry, this app still tells you if you rolled a nat 20 or a devastating na
 
 ## For Developers
 
-If you'd like to help with the development of this DnD Character Sheet welcome aboard! Here's how to get started:
+If you'd like to help with the development of Dragons Infinity, welcome aboard! Here's how to get started:
 
 Run the following command in your terminal to clone the project onto your computer:
 ```
-git clone https://github.com/tygedavis/dndCharacterSheet
+git clone https://github.com/tygedavis/dragonsInfinityj
 ```
 
 When the project finishes downloading cd into the repo and run
